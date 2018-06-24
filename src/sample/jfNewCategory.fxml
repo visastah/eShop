@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="354.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="354.0" style="-fx-background-color: #1ecd38;">
+       <children>
+            <Label text="New Category" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="216.0" prefWidth="354.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="53.0" prefWidth="354.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <JFXTextField alignment="CENTER" focusColor="#1ecd38" labelFloat="true" prefHeight="25.0" prefWidth="174.0" promptText="Category Name" />
+               </children>
+            </HBox>
+            <JFXButton buttonType="RAISED" prefHeight="38.0" prefWidth="62.0" style="-fx-background-color: #ffffff; -fx-border-color: #1ecd38;" text="Add" textFill="#1ecd38" />
+            <Label alignment="CENTER" prefHeight="36.0" prefWidth="354.0" text="Error Text" textFill="#c91f1f">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="77.0" prefWidth="354.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <JFXButton prefHeight="41.0" prefWidth="64.0" style="-fx-background-color: #1ecd38;" text="Close" textFill="WHITE" />
+         </children>
+         <padding>
+            <Insets right="30.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

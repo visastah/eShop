@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-image: url('file:/home/visas/Downloads/shop_login_background.png'); -fx-background-size: 100% 100%;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="279.5" layoutY="143.0" prefHeight="314.0" prefWidth="341.0" style="-fx-border-color: #000000; -fx-border-radius: 4; -fx-background-color: rgba(255, 255, 255, 0.8); -fx-background-radius: 10;">
+         <children>
+            <Label prefHeight="21.0" prefWidth="59.0" text="LOGIN" textFill="#1ecd38">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="339.0">
+               <children>
+                  <JFXTextField focusColor="#1ecd38" labelFloat="true" prefHeight="25.0" prefWidth="288.0" promptText="Username">
+
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="11.0" layoutY="158.0" prefHeight="39.0" prefWidth="339.0">
+               <children>
+                  <JFXPasswordField focusColor="#1ecd38" labelFloat="true" prefHeight="25.0" prefWidth="290.0" promptText="Password" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <JFXCheckBox prefHeight="18.0" prefWidth="289.0" text="Admin">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </JFXCheckBox>
+            <JFXButton prefHeight="49.0" prefWidth="121.0" style="-fx-background-color: #1ecd38; -fx-opacity: 0.8;" text="Submit" textFill="WHITE">
+
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

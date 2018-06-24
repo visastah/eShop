@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="Infinity" maxWidth="Infinity" minHeight="600.0" minWidth="900" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="76.0" prefWidth="900.0" style="-fx-background-color: #1ecd38;">
+         <children>
+            <Label fx:id="username" text="User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <JFXButton buttonType="RAISED" onAction="#goBack" prefHeight="34.0" prefWidth="77.0" style="-fx-border-color: #ffffff; -fx-border-radius: 4;" text="Sign out" textFill="WHITE">
+               </JFXButton>
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="67.0" prefWidth="900.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="625.0">
+               <children>
+                  <JFXButton buttonType="RAISED" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #2470ff;" text="Print Table" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="309.0" layoutY="10.0" prefHeight="62.0" prefWidth="445.0">
+               <children>
+                  <ChoiceBox fx:id="searchCriteria1" prefWidth="150.0" />
+                  <JFXTextField fx:id="searchField1" focusColor="#1ecd38" prefHeight="25.0" prefWidth="153.0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="75.0" prefHeight="471.0" prefWidth="900.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <VBox prefHeight="467.0" prefWidth="899.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <VBox prefHeight="407.0" prefWidth="878.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <TableView fx:id="tableView" prefHeight="380.0" prefWidth="797.0" style="-fx-border-color: #000000;">
+                          <columns>
+                            <TableColumn fx:id="productCode" prefWidth="134.0" text="Product Code" />
+                            <TableColumn fx:id="productName" prefWidth="184.0" text="Product Name" />
+                              <TableColumn fx:id="price" prefWidth="127.0" text="Unit Price" />
+                              <TableColumn fx:id="quantity" prefWidth="117.0" text="Quantity" />
+                              <TableColumn fx:id="category" prefWidth="158.0" text="Category" />
+                              <TableColumn fx:id="active" prefWidth="192.0" text="Active" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="90.0" prefWidth="617.0" spacing="10" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <JFXButton onAction="#detailsButtonPressed" prefHeight="47.0" prefWidth="70.0" style="-fx-background-color: #1ecd38;" text="Details" textFill="WHITE">
+                                    </JFXButton>
+                              <JFXButton layoutX="10.0" layoutY="27.0" onAction="#editButtonPressed" prefHeight="47.0" prefWidth="70.0" style="-fx-background-color: #1ecd38;" text="Edit" textFill="WHITE" />
+                              <JFXButton layoutX="90.0" layoutY="32.0" onAction="#editButtonPressed" prefHeight="47.0" prefWidth="70.0" style="-fx-background-color: #1ecd38;" text="Delete" textFill="WHITE" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" layoutX="248.0" layoutY="10.0" prefHeight="90.0" prefWidth="373.0" spacing="10" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <JFXButton onAction="#newButtonPressed" prefHeight="47.0" prefWidth="133.0" style="-fx-background-color: #ffffff; -fx-border-color: #1ecd38;" text="New Product" textFill="#1ecd38">
+                                    </JFXButton>
+                              <JFXButton layoutX="206.0" layoutY="27.0" onAction="#addCategoryPressed" prefHeight="47.0" prefWidth="133.0" style="-fx-background-color: #ffffff; -fx-border-color: #1ecd38;" text="New Category" textFill="#1ecd38" />
+                           </children>
+                        </HBox>
+                     </children></HBox>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

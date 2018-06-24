@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="708.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="499.0" style="-fx-background-color: #1ecd38;">
+            <children>
+                <Label prefHeight="31.0" prefWidth="147.0" text="Edit Product" textFill="WHITE">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="10.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER_LEFT" prefHeight="320.0" prefWidth="391.0" spacing="5.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="27.0" prefHeight="38.0" prefWidth="499.0" spacing="5.0" style="-fx-background-color: #ffffff;">
+                            <children>
+                                <JFXTextField focusColor="#1ecd38" labelFloat="true" prefHeight="25.0" prefWidth="344.0" promptText="Product Name" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="65.0" prefHeight="38.0" prefWidth="499.0" spacing="5.0" style="-fx-background-color: #ffffff;">
+                            <children>
+                                <JFXTextField focusColor="#1ecd38" labelFloat="true" prefHeight="25.0" prefWidth="344.0" promptText="Unit Price" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="46.0" prefHeight="38.0" prefWidth="499.0" spacing="5.0" style="-fx-background-color: #ffffff;">
+                            <children>
+                                <JFXTextField focusColor="#1ecd38" labelFloat="true" prefHeight="25.0" prefWidth="344.0" promptText="Quantity" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="193.0" prefHeight="48.0" prefWidth="380.0" spacing="5.0" style="-fx-background-color: #ffffff;">
+                            <children>
+                                <Label prefHeight="19.0" prefWidth="77.0" text="Category:">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Label>
+                                <ChoiceBox prefWidth="150.0" />
+                                <JFXButton buttonType="RAISED" style="-fx-border-color: #1ecd38; -fx-background-color: #ffffff;" text="Add Category" textFill="#1ecd38" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="103.0" prefHeight="38.0" prefWidth="499.0" spacing="5.0" style="-fx-background-color: #ffffff;">
+                            <children>
+                                <JFXTextField focusColor="#1ecd38" labelFloat="true" prefHeight="25.0" prefWidth="344.0" promptText="Supplier Code" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="231.0" prefHeight="65.0" prefWidth="380.0" spacing="5.0" style="-fx-background-color: #ffffff;">
+                            <children>
+                                <JFXTextArea focusColor="#1ecd38" labelFloat="true" prefHeight="62.0" prefWidth="343.0" promptText="Description">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin></JFXTextArea>
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </VBox>
+                <VBox prefHeight="320.0" prefWidth="280.0" style="-fx-border-color: #1ecd38;">
+                    <children>
+                        <VBox alignment="CENTER" prefHeight="45.0" prefWidth="278.0" spacing="10.0" style="-fx-background-color: #ffffff;">
+                            <children>
+                                <JFXButton buttonType="RAISED" style="-fx-border-color: #1ecd38; -fx-background-color: #ffffff;" text="Add Photo" textFill="#1ecd38" />
+                            </children>
+                        </VBox>
+                  <ScrollPane>
+                     <content>
+                        <VBox prefHeight="282.0" prefWidth="278.0" />
+                     </content>
+                  </ScrollPane>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <VBox alignment="CENTER_LEFT" layoutX="40.0" layoutY="392.0" prefHeight="41.0" prefWidth="664.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <JFXToggleButton prefHeight="43.0" prefWidth="118.0" text="Active" toggleColor="#1ecd38" />
+            </children>
+        </VBox>
+        <HBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="664.0" spacing="10.0" style="-fx-background-color: #ffffff;">
+            <padding>
+                <Insets right="30.0" />
+            </padding>
+            <children>
+                <JFXButton prefHeight="38.0" prefWidth="73.0" style="-fx-background-color: #1ecd38;" text="Save" textFill="WHITE" />
+                <JFXButton layoutX="418.0" layoutY="25.0" prefHeight="38.0" prefWidth="73.0" style="-fx-background-color: #1ecd38;" text="Cancel" textFill="WHITE" />
+            </children>
+        </HBox>
+    </children>
+</VBox>
